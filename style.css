@@ -1,0 +1,224 @@
+body {
+    background-color: #d1d5db;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #9ca3af;
+}
+
+.projekt,
+.zkusenost {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.projekt h3,
+.zkusenost h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.zkusenost h3 {
+    font-size: 1.05rem;
+}
+
+.zkusenost p {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.zkusenost strong {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+p,
+li {
+    line-height: 1.6;
+}
+
+.dovednosti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dovednosti span {
+    background-color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dovednosti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dovednosti span {
+    background-color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: rgb(236, 230, 230);
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1f2937;
+    transform: translateY(-2px);
+}
+
+header {
+    padding: 24px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header>p {
+    margin-bottom: 16px;
+}
+
+body {
+    background-color: #e5e7eb;
+}
+
+.projekt,
+.zkusenost {
+    border: 1px solid #d1d5db;
+}
+
+section h2 {
+    color: #111827;
+}
+
+.tlacitko-projekt {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 14px;
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.tlacitko-projekt:hover {
+    background-color: #374151;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header>p {
+        font-size: 0.95rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .dovednosti {
+        gap: 8px;
+    }
+
+    .dovednosti span {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .projekt,
+    .zkusenost {
+        padding: 16px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding: 18px 15px;
+    }
+}
