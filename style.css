@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #d1d5db;
+    background-color: #e5e7eb;
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -7,19 +11,39 @@ body {
 header {
     background-color: #1f2937;
     color: white;
-    padding: 30px;
+    padding: 24px 20px;
     text-align: center;
 }
 
-footer {
-    background-color: #1f2937;
-    color: white;
-    padding: 20px;
-    text-align: center;
+header h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
-footer a {
-    color: white;
+header>p {
+    margin-bottom: 16px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: rgb(236, 230, 230);
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1f2937;
+    transform: translateY(-2px);
 }
 
 main {
@@ -33,35 +57,42 @@ section {
 }
 
 section h2 {
+    color: #111827;
+    margin-top: 0;
     margin-bottom: 16px;
     padding-bottom: 6px;
     border-bottom: 2px solid #9ca3af;
 }
 
 .projekt,
-.zkusenost {
+.karta {
     background-color: white;
     padding: 22px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .projekt h3,
-.zkusenost h3 {
+.karta h3 {
     margin-top: 0;
-    margin-bottom: 6px;
-}
-
-.zkusenost h3 {
-    font-size: 1.05rem;
-}
-
-.zkusenost p {
-    margin-top: 4px;
     margin-bottom: 10px;
 }
 
-.zkusenost strong {
+.karta h3 {
+    font-size: 1.1rem;
+}
+
+.karta p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.karta strong {
+    display: inline-block;
+    margin-bottom: 4px;
     color: #4b5563;
     font-size: 0.95rem;
 }
@@ -88,70 +119,11 @@ li {
     padding: 10px 14px;
     border-radius: 8px;
     font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
-.dovednosti {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.dovednosti span {
-    background-color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    display: inline-block;
-    color: rgb(236, 230, 230);
-    text-decoration: none;
-    margin: 5px;
-    padding: 8px 14px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    background-color: white;
-    color: #1f2937;
-    transform: translateY(-2px);
-}
-
-header {
-    padding: 24px 20px;
-}
-
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-}
-
-header>p {
-    margin-bottom: 16px;
-}
-
-body {
-    background-color: #e5e7eb;
-}
-
-.projekt,
-.zkusenost {
-    border: 1px solid #d1d5db;
-}
-
-section h2 {
-    color: #111827;
+.zajmy {
+    line-height: 1.8;
 }
 
 .tlacitko-projekt {
@@ -167,6 +139,17 @@ section h2 {
 
 .tlacitko-projekt:hover {
     background-color: #374151;
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
 }
 
 @media (max-width: 700px) {
@@ -210,7 +193,7 @@ section h2 {
     }
 
     .projekt,
-    .zkusenost {
+    .karta {
         padding: 16px;
     }
 
